@@ -24,5 +24,7 @@ https://www.turtlebot.com/turtlebot2/ Official homepage for the TurtleBot2 mobil
 municate between robot and computer within ROS by using rosaria node in rosaria ROS package
 
 References:
+\bibitem{matlab_ref}
+MathWorks, "MATLAB Documentation," [Online]. Available: \url{https://www.mathworks.com/help/ros/gs/ros1-nodes.html} [Accessed: 30-Jan-2025].
 
 
