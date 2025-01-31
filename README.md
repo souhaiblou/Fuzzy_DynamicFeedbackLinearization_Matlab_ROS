@@ -38,12 +38,12 @@ On the Master PC
 
 Run the following command to start the ROS master and parameter server:
 
-```bash roscore
+```bash (roscore)
 
 On the Slave PC
 
 Run the following command to start the rosaria node:
-```bash rosrun rosaria rosaria
+```bash (rosrun rosaria rosaria)
 
 This node interfaces the robot with the computer, handling topic communication for velocity commands (/RosAria/cmd_vel) and odometry data (/RosAria/pose).
 
