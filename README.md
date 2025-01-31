@@ -13,7 +13,7 @@ Step 1: Configure ROS Network
 On the Master PC
 
 Edit the .bashrc file and add the following lines:
-
+```bash export ROS_HOSTNAME=192.168.0.121
 export ROS_HOSTNAME=192.168.0.121   # Replace with your master PC's IP
 export ROS_MASTER_URI=http://192.168.0.121:11311
 
