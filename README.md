@@ -1,30 +1,67 @@
-# Instalation
 
-As presented in Fig. A The initial stage is to configure the ROS network to assure the wireless
-communication between a Powerful PC and a Laptop PC This sort of communication is master-slave.
-The powerful PC, as a high-level master, runs rescore inside, and the low-level PC slave runs the
-rosaria node to deliver commands and odometry subjects. Set ROS Network setup
-In the remote (master) PC, add this command in the .bashrc file.
-export ROS HOSTNAME=192.168.0.121 for example
-export ROS MASTER URI=http://192.168.0.121:11311
-In Netbook PC (slave), add this command in the .bashrc file
-'''export ROS HOSTNAME=192.168.0.200'''  for example
-export ROS MASTER URI=http://192.168.0.121:11311
 
-Run this command on the remote PC: roscore This command runs the ROS master and parameter
-server.
-Run this command on the netbook PC. – rosrun rosaria rosaria This program executes the rosaria
-node for the interface between a robot and computer that delivers all topic requests for transmitting
-velocity commands to the /RosAria/cmd vel and Odomety topic /RosAria/pose
-For further assistance and supplementary information, look to these official resources:
-https://www.ros.org/ Main gateway for ROS middleware.
-https://wiki.ros.org/ Documentation Official documentation and package descriptions.
-https://www.turtlebot.com/turtlebot2/ Official homepage for the TurtleBot2 mobile robot.
-\url{https://wiki.ros.org/ROSARIA/Tutorials/How%20to%20use%20ROSARIA} Tutorial how to com-
-municate between robot and computer within ROS by using rosaria node in rosaria ROS package
+ROS Network Setup for Master-Slave Communication
 
-References:
+Overview
 
-[1] MathWorks, "MATLAB Documentation," [Online]. Available: \url{https://www.mathworks.com/help/ros/gs/ros1-nodes.html} [Accessed: 31-Jan-2025].
+This guide provides instructions for setting up a ROS (Robot Operating System) network between a powerful PC (master) and a laptop PC (slave) for wireless communication. The master PC runs roscore, while the slave PC executes the rosaria node to handle robot control and odometry data.
+
+Installation and Configuration
+
+Step 1: Configure ROS Network
+
+On the Master PC
+
+Edit the .bashrc file and add the following lines:
+
+export ROS_HOSTNAME=192.168.0.121   # Replace with your master PC's IP
+export ROS_MASTER_URI=http://192.168.0.121:11311
+
+Then, apply the changes:
+
+source ~/.bashrc
+
+On the Slave PC
+
+Edit the .bashrc file and add the following lines:
+
+export ROS_HOSTNAME=192.168.0.200   # Replace with your slave PC's IP
+export ROS_MASTER_URI=http://192.168.0.121:11311
+
+Then, apply the changes:
+
+source ~/.bashrc
+
+Step 2: Start ROS Services
+
+On the Master PC
+
+Run the following command to start the ROS master and parameter server:
+
+roscore
+
+On the Slave PC
+
+Run the following command to start the rosaria node:
+
+rosrun rosaria rosaria
+
+This node interfaces the robot with the computer, handling topic communication for velocity commands (/RosAria/cmd_vel) and odometry data (/RosAria/pose).
+
+Additional Resources
+
+For further assistance, refer to the following official ROS documentation and tutorials:
+
+ROS Main Gateway
+
+ROS Official Documentation
+
+TurtleBot2 Homepage
+
+ROSARIA Tutorial
+
+References
+
+[1] MathWorks, "MATLAB Documentation," [Online]. Available: MATLAB ROS Nodes. [Accessed: 31-Jan-2025].
 
 
