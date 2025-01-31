@@ -8,7 +8,7 @@ In the remote (master) PC, add this command in the .bashrc file.
 export ROS HOSTNAME=192.168.0.121 for example
 export ROS MASTER URI=http://192.168.0.121:11311
 In Netbook PC (slave), add this command in the .bashrc file
-git add .export ROS HOSTNAME=192.168.0.200 for example
+'''export ROS HOSTNAME=192.168.0.200'''  for example
 export ROS MASTER URI=http://192.168.0.121:11311
 
 Run this command on the remote PC: roscore This command runs the ROS master and parameter
