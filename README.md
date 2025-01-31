@@ -51,15 +51,17 @@ Additional Resources
 
 For further assistance, refer to the following official ROS documentation and tutorials:
 
-ROS Main Gateway
+https://wiki.ros.org/   % Documentation Official documentation and package descriptions.
 
-ROS Official Documentation
+ https://wiki.ros.org/Documentation % ROS Official Documentation
 
-TurtleBot2 Homepage
+ https://www.turtlebot.com/turtlebot2/ % TurtleBot2 Homepage
 
-ROSARIA Tutorial
+ https://wiki.ros.org/ROSARIA ROSARIA Tutorial % How to use ROSARIA
 
-References
+![ROS Network Setup]([https://example.com/path-to-image.png](https://www.mathworks.com/help/ros/ug/connect-to-a-ros-network.html))
+
+# References:
 
 [1] MathWorks, "MATLAB Documentation," [Online]. Available: MATLAB ROS Nodes. [Accessed: 31-Jan-2025].
 
