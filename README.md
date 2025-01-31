@@ -14,23 +14,23 @@ On the Master PC
 
 Edit the .bashrc file and add the following lines:
 ```bash export ROS_HOSTNAME=192.168.0.121
-export ROS_HOSTNAME=192.168.0.121   # Replace with your master PC's IP
-export ROS_MASTER_URI=http://192.168.0.121:11311
+$ export ROS_HOSTNAME=192.168.0.121   # Replace with your master PC's IP
+$ export ROS_MASTER_URI=http://192.168.0.121:11311
 
 Then, apply the changes:
 
-source ~/.bashrc
+$ source ~/.bashrc
 
 On the Slave PC
 
 Edit the .bashrc file and add the following lines:
 
-export ROS_HOSTNAME=192.168.0.200   # Replace with your slave PC's IP
-export ROS_MASTER_URI=http://192.168.0.121:11311
+$ export ROS_HOSTNAME=192.168.0.200   # Replace with your slave PC's IP
+$ export ROS_MASTER_URI=http://192.168.0.121:11311
 
 Then, apply the changes:
 
-source ~/.bashrc
+$ source ~/.bashrc
 
 Step 2: ROS Master and Required Packages 
 
@@ -38,12 +38,12 @@ On the Master PC
 
 Run the following command to start the ROS master and parameter server:
 
-```bash (roscore)
+$ roscore
 
 On the Slave PC
 
 Run the following command to start the rosaria node:
-```bash (rosrun rosaria rosaria)
+$ rosrun rosaria rosaria
 
 This node interfaces the robot with the computer, handling topic communication for velocity commands (/RosAria/cmd_vel) and odometry data (/RosAria/pose).
 
