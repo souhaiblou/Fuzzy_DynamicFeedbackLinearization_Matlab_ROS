@@ -1,4 +1,4 @@
-# Fuzzy_DynamicFeedbackLinearization_Matlab_ROS
+# Instalation
 
 As presented in Fig. A The initial stage is to configure the ROS network to assure the wireless
 communication between a Powerful PC and a Laptop PC This sort of communication is master-slave.
