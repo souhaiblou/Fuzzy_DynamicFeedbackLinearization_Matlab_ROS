@@ -1,12 +1,12 @@
 
 
-ROS Network Setup for Master-Slave Communication
+# ROS Network Setup for Master-Slave Communication
 
-Overview
+# 1.Overview
 
 This guide provides instructions for setting up a ROS (Robot Operating System) network between a powerful PC (master) and a laptop PC (slave) for wireless communication. The master PC runs roscore, while the slave PC executes the rosaria node to handle robot control and odometry data.
 
-Installation and Configuration
+# 2.Installation and Configuration
 
 Step 1: Configure ROS Network
 
