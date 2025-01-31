@@ -32,7 +32,7 @@ Then, apply the changes:
 
 source ~/.bashrc
 
-Step 2: Start ROS Services
+Step 2: ROS Master and Required Packages 
 
 On the Master PC
 
